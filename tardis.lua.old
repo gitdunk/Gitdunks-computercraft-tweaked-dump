@@ -1,0 +1,19 @@
+function drawmenu()
+    term.setCursorPos(1,1)
+    term.setBackgroundColor(colors.blue)
+    print('[menu]')
+end
+
+function drawdesk()
+    local backgr = paintutils.loadImage("tardis/backgr.nfp")
+    paintutils.drawImage(backgr, 2, 1)
+    drawmenu()
+end
+
+function main()
+    term.setCursorPos(3,2)
+end
+
+
+drawdesk()
+main()
