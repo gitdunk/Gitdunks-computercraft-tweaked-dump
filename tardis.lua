@@ -85,7 +85,7 @@ function drawMenu2()
     print(subsys("fluid_link"))
     if subsys("fluid_link") == true then 
         pos(26,3)
-        write("HL:")
+        write("HP:")
         pos(29,3)
         print(subsysHP("fluid_link"))
     end
@@ -93,7 +93,7 @@ function drawMenu2()
     print(subsys("nav_com"))
     if subsys("nav_com") == true then 
         pos(23,4)
-        write("HL:")
+        write("HP:")
         pos(26,4)
         print(subsysHP("nav_com"))
     end
@@ -101,7 +101,7 @@ function drawMenu2()
     print(subsys("stabilizers"))
     if subsys("stabilizers") == true then 
         pos(27,5)
-        write("HL:")
+        write("HP:")
         pos(30,5)
         print(subsysHP("stabilizers"))
     end
@@ -109,7 +109,7 @@ function drawMenu2()
     print(subsys("chameleon"))
     if subsys("chameleon") == true then 
         pos(34,6)
-        write("HL:")
+        write("HP:")
         pos(37,6)
         print(subsysHP("chameleon"))
     end
@@ -117,7 +117,7 @@ function drawMenu2()
     print(subsys("antenna"))
     if subsys("antenna") == true then
         pos(35,7)
-        write("HL:")
+        write("HP:")
         pos(38,7)
         print(subsysHP("antenna"))
     end
@@ -125,7 +125,7 @@ function drawMenu2()
     print(subsys("shield_generator"))
     if subsys("shield_generator") == true then    
         pos(32,8)
-        write("HL:")
+        write("HP:")
         pos(35,8)
         print(subsysHP("shield_generator"))
     end
@@ -139,7 +139,7 @@ function drawMenu2()
     write("Refresh") -- word for refresh
     pos(1,y)
     bCol(colors.yellow)
-    write("HL = Health Lost, starting from 1")
+    write("HP is a range from 0.0-1.0, 0 means broken")
 end
 function componentMenu()
     drawMenu2()
